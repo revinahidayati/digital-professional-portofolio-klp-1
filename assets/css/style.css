@@ -9,13 +9,14 @@
 body {
   font-family: var(--font-main);
   line-height: 1.6;
+  background-color: #ffffff;
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #212529;
+  background-color: #374a5e;
   z-index: 1000;
 }
 
@@ -23,26 +24,19 @@ header {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   padding: 16px 0;
-}
 
-.nav-wrapper {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.logo,
 .brand {
-  color: var(--primary);
+  color: #ffffff;
   font-weight: bold;
   font-style: italic;
+  font-family: poppins;
   font-size: 20px;
 }
 
@@ -53,22 +47,24 @@ header {
 }
 
 .nav-menu a {
-  color: var(--light);
   text-decoration: none;
+  color: #ffffff;
   font-size: 14px;
+  font-family: poppins;
   letter-spacing: 1px;
   transition: color var(--transition-fast);
 }
 
 .nav-menu a:hover {
-  color: var(--primary);
+  color: #000;
 }
 
 .hero {
   height: 100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    linear-gradient(rgba(214, 197, 197, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/hero-bg.jpg") center / cover no-repeat;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +98,11 @@ header {
   font-weight: bold;
   text-decoration: none;
   border-radius: 4px;
-  transition: transform var(--transition-fast), background-color var(--transition-fast);
+  cursor: pointer;
+
+  transition: background-color var(--transition-fast),
+              transform var(--transition-fast);
+
   animation: fadeUp 0.8s ease forwards;
   animation-delay: 0.4s;
 }
@@ -110,17 +110,6 @@ header {
 .hero-button:hover {
   background-color: #e0b700;
   transform: translateY(-2px);
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .about-timeline {
@@ -141,7 +130,6 @@ header {
   padding: 40px 0;
 }
 
-/* Garis tengah */
 .timeline::before {
   content: "";
   position: absolute;
@@ -153,27 +141,23 @@ header {
   transform: translateX(-50%);
 }
 
-/* Item */
 .timeline-item {
   position: relative;
   width: 50%;
   padding: 20px 40px;
-  box-sizing: border-box;
+  animation: fadeUp 0.8s ease forwards;
 }
 
-/* Kiri */
 .timeline-item.left {
   left: 0;
   text-align: right;
 }
 
-/* Kanan */
 .timeline-item.right {
   left: 50%;
   text-align: left;
 }
 
-/* Konten */
 .timeline-content {
   background-color: #f8f9fa;
   padding: 20px;
@@ -186,22 +170,20 @@ header {
 }
 
 .timeline-content h3 {
-  margin-bottom: 10px;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
-/* Lingkaran */
 .timeline-circle {
   position: absolute;
   top: 30px;
   width: 30px;
   height: 30px;
-  background-color: #ffc800;
+  background-color: var(--primary);
   border-radius: 50%;
   z-index: 1;
 }
 
-/* Posisi lingkaran */
 .timeline-item.left .timeline-circle {
   right: -15px;
 }
@@ -210,7 +192,75 @@ header {
   left: -15px;
 }
 
-.timeline-item {
-  animation: fadeUp 0.8s ease forwards;
+/* =====================
+   Projects Section
+   ===================== */
+
+.projects {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+.projects-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+/* Card */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.project-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Content */
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
