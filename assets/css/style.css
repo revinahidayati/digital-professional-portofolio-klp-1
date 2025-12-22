@@ -105,9 +105,12 @@ header {
   transform: translateY(-2px);
 }
 
-/* ABOUT */
+/* =====================
+   ABOUT TIMELINE
+===================== */
+
 .about-timeline {
-  padding: 160px 0 100px; /* 🔥 FIX UTAMA */
+  padding: 160px 0 100px;
   background-color: #ffffff;
 }
 
@@ -124,6 +127,7 @@ header {
   padding: 40px 0;
 }
 
+/* garis tengah */
 .timeline::before {
   content: "";
   position: absolute;
@@ -158,16 +162,22 @@ header {
   border-radius: 6px;
 }
 
-.timeline-content h4 {
-  color: #6c757d;
-  margin-bottom: 5px;
-}
-
 .timeline-content h3 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
+.timeline-content h4 {
+  color: #6c757d;
+  margin-bottom: 6px;
+}
+
+.about-short {
+  font-size: 14px;
+  color: #555;
+}
+
+/* titik timeline */
 .timeline-circle {
   position: absolute;
   top: 30px;
@@ -185,6 +195,85 @@ header {
 .timeline-item.right .timeline-circle {
   left: -15px;
 }
+
+/* =====================
+   INLINE BUTTON (ABOUT)
+===================== */
+
+.about-inline-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.about-inline-buttons button {
+  padding: 6px 14px;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: lowercase;
+  transition: all 0.2s ease;
+}
+
+.about-inline-buttons button:hover {
+  background-color: #eaeaea;
+}
+
+/* =====================
+   DETAIL CONTENT
+===================== */
+
+.about-detail-inline {
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto 0;
+}
+
+/* SEMUA DISEMBUNYIKAN */
+.detail-box {
+  display: none;
+  background-color: #f8f9fa;
+  padding: 24px;
+  border-radius: 6px;
+  animation: fadeUp 0.4s ease;
+}
+
+/* YANG AKTIF MUNCUL */
+.detail-box.active {
+  display: block;
+}
+
+.detail-box h4 {
+  margin-bottom: 12px;
+}
+
+.detail-box ul {
+  padding-left: 20px;
+}
+
+.detail-box li {
+  margin-bottom: 6px;
+}
+
+/* =====================
+   ANIMATION
+===================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 /* PROJECTS */
 .projects {
