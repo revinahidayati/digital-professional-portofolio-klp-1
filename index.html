@@ -5,28 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Portofolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
 </head>
 <body>
-    <header>
-        <h1>Digital Professional Portofolio</h1>
-        <p>Kelompok 1 - PPLOS</p>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/projects.html">Projects</a>
-            <a href="pages/blog.html">Blog</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">DIGIFOLIO</h1>
 
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>Website Portofolio digital Professional untuk menampilkam profil, proyek, dan karya anggota Kelompok</p>
-        </section>
-    </main>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-subtitle">
+          <h1>Welcome To Our Portfolio</h1>
+      
+          Website ini dibuat sebagai portofolio digital untuk menampilkan profil,
+          keterampilan, serta proyek yang telah dikerjakan oleh anggota kelompok
+          dalam bidang teknologi dan pengembangan web. 
+        </p>
+      </div>
+    </section>
+
+  <section class="about-timeline" id="about">
+    <div class="timeline-wrapper">
+      <h2 class="section-title">ABOUT</h2>
+      <p class="section-subtitle">Our journey in building this project</p>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h4>2024</h4>
+            <h3>Project Planning</h3>
+            <p>
+              At this stage, we discussed the project idea, defined the theme,
+              and divided tasks among team members.
+            </p>
+          </div>
+          <div class="timeline-circle"></div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h4>Early 2025</h4>
+            <h3>Design & Development</h3>
+            <p>
+              We started designing the website layout and developing features
+              using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div class="timeline-circle"></div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h4>Mid 2025</h4>
+            <h3>Testing & Improvement</h3>
+            <p>
+              The website was tested on different devices and improved based on
+              feedback and evaluation.
+            </p>
+          </div>
+          <div class="timeline-circle"></div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h4>Now</h4>
+            <h3>Final Project</h3>
+            <p>
+              This website is presented as a digital professional portfolio
+              representing our learning outcomes.
+            </p>
+          </div>
+          <div class="timeline-circle"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+    <!-- PROJECT PREVIEW -->
+    <section class="project-preview">
+      <h3>Project Unggulan</h3>
+
+      <div class="project-list">
+        <div class="project-card">
+          <h4>Project Website Akademik</h4>
+          <p>Website sederhana untuk pengelolaan informasi akademik.</p>
+        </div>
+
+        <div class="project-card">
+          <h4>Website Portofolio</h4>
+          <p>Website portofolio pribadi berbasis web statis.</p>
+        </div>
+
+        <div class="project-card">
+          <h4>Landing Page Produk</h4>
+          <p>Landing page untuk memperkenalkan produk digital.</p>
+        </div>
+      </div>
+
+      <a href="pages/projects.html" class="link-more">Lihat semua project</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
+  </footer>
     
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
 </body>
 </html>
