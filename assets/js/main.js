@@ -1,22 +1,24 @@
-const toggleButton = document.getElementById("theme-toggle");
+document.addEventListener("DOMContentLoaded", function () {
 
-// ambil tema dari localStorage
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  document.documentElement.setAttribute("data-theme", "dark");
-  toggleButton.textContent = "☀️";
-}
+  const buttons = document.querySelectorAll(".about-inline-buttons button");
+  const boxes = document.querySelectorAll(".detail-box");
 
-toggleButton.addEventListener("click", () => {
-  const currentTheme = document.documentElement.getAttribute("data-theme");
-
-  if (currentTheme === "dark") {
-    document.documentElement.removeAttribute("data-theme");
-    localStorage.setItem("theme", "light");
-    toggleButton.textContent = "🌙";
-  } else {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-    toggleButton.textContent = "☀️";
+  // ⛔ kalau bukan halaman about, hentikan JS
+  if (buttons.length === 0 || boxes.length === 0) {
+    return;
   }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const target = button.dataset.target;
+
+      boxes.forEach(box => box.classList.remove("active"));
+
+      const activeBox = document.getElementById(target);
+      if (activeBox) {
+        activeBox.classList.add("active");
+      }
+    });
+  });
+
 });
