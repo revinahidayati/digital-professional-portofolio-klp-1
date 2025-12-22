@@ -1,0 +1,8 @@
+:root {
+  --primary: #ffc800;
+  --dark: #212529;
+  --light: #ffffff;
+  --text-muted: #6c757d;
+  --font-main: Arial, Helvetica, sans-serif;
+  --transition-fast: 0.3s ease;
+}
