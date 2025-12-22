@@ -112,6 +112,8 @@ header {
   transform: translateY(-2px);
 }
 
+/* ABOUT CSS */
+
 .about-timeline {
   padding: 100px 0;
   background-color: #ffffff;
@@ -192,9 +194,7 @@ header {
   left: -15px;
 }
 
-/* =====================
-   Projects Section
-   ===================== */
+/* PROJECTS CSS */
 
 .projects {
   padding: 100px 0;
@@ -296,6 +296,7 @@ header {
   cursor: pointer;
 }
 
+/* BLOG CSS */
 .blog {
   padding: 100px 0;
   background-color: #ffffff;
@@ -399,6 +400,126 @@ header {
 .blog-archive a:hover {
   color: var(--primary);
 }
+
+/* =====================
+   Contact Section
+   ===================== */
+
+.contact {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+.contact-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Layout */
+.contact-content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Form */
+.contact-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary);
+}
+
+/* Button */
+.contact-button {
+  background-color: var(--primary);
+  color: #000;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e0b700;
+  transform: translateY(-2px);
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  margin-bottom: 16px;
+}
+
+.contact-info p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Social Media */
+.contact-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.contact-social a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.contact-social a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   Responsive (Mobile)
+   ===================== */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-social {
+    justify-content: center;
+  }
+}
+
 
 @keyframes fadeUp {
   from {
