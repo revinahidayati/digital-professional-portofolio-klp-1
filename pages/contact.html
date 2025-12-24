@@ -4,9 +4,18 @@
   <meta charset="UTF-8">
   <title>DIGIFOLIO | Contact</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
 <header>
   <nav class="navbar">
     <h1 class="logo">DIGIFOLIO</h1>
@@ -20,37 +29,89 @@
   </nav>
 </header>
 
-<section class="contact-hero">
-  <div class="contact-overlay">
+<!-- CONTACT SECTION -->
+<section class="contact">
+  <div class="contact-container">
 
-    <h2 class="section-title white">CONTACT US</h2>
-    <p class="section-subtitle white">
-      Jangan ragu untuk menghubungi saya
-    </p>
+    <!-- LEFT CARD -->
+    <div class="contact-info">
+  <h2>Contact Team</h2>
+  <p>Hubungi kami melalui media sosial masing-masing anggota tim.</p>
 
-    <form class="contact-form">
+  <div class="team-grid">
 
-      <div class="form-left">
-        <input type="text" placeholder="Your Name *" required>
-        <input type="email" placeholder="Your Email *" required>
-        <input type="tel" placeholder="Your Phone *" required>
+    <div class="team-member">
+      <h4>Revina Hidayati</h4>
+      <span class="role">UI/UX Designer</span>
+
+      <div class="member-social">
+        <a href="https://instagram.com/revinahanur" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/revinahidayati" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
+    </div>
 
-      <div class="form-right">
-        <textarea placeholder="Your Message *" required></textarea>
+    <div class="team-member">
+      <h4>Delvina</h4>
+      <span class="role">Frontend Developer</span>
+
+      <div class="member-social">
+        <a href="https://instagram.com/finaag12"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/delvina-vina"><i class="fab fa-github"></i></a>
       </div>
+    </div>
 
-      <div class="form-button">
-        <button type="submit">SEND MESSAGE</button>
+    <div class="team-member">
+      <h4>Elka Bella</h4>
+      <span class="role">Backend Developer</span>
+
+      <div class="member-social">
+        <a href="https://instagram.com/elka.bella"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/elkabella"><i class="fab fa-github"></i></a>
       </div>
+    </div>
 
-    </form>
+    <div class="team-member">
+      <h4>Aksiomal Arora</h4>
+      <span class="role">Documentation</span>
+
+      <div class="member-social">
+        <a href="https://instagram.com/aksiomaarora"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/aksiomaaroraak-ui"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- RIGHT CARD -->
+    <div class="contact-form">
+      <h2>Get In Touch</h2>
+      <p>Silakan isi form di bawah ini untuk mengirim pesan.</p>
+
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
   </div>
 </section>
 
-  <footer>
-    <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
-  </footer>
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
 
   <div class="footer-social">
     <a href="https://instagram.com/username" target="_blank">IG</a>

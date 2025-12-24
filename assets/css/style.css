@@ -453,134 +453,170 @@ header {
 }
 
 /* =====================
-   CONTACT SECTION
+   CONTACT (CARD STYLE)
 ===================== */
 
-.contact-hero {
-  min-height: 100vh;
-  background: url("../images/map-image.jpg") center / cover no-repeat;
-  position: relative;
+.contact {
+  padding: 160px 0 100px;
+  background-color: #f4f7fb;
 }
 
-.contact-overlay {
-  background-color: rgba(0,0,0,0.7);
-  min-height: 100vh;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.section-title.white {
-  color: #ffffff;
-}
-
-.section-subtitle.white {
-  color: #d1d1d1;
-  margin-bottom: 60px;
-}
-
-/* FORM */
-.contact-form {
-  max-width: 1100px;
+.contact-container {
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  display: flex;
+  gap: 40px;
 }
 
-.form-left,
-.form-right {
+/* LEFT CARD */
+.contact-info {
+  flex: 1;
+  background-color: #0d5bd8;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+/* TEAM GRID INSIDE CONTACT INFO */
+
+.team-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.team-member {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.team-member h4 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.team-member .role {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* SOCIAL ICON */
+.member-social {
+  margin-top: 12px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.member-social a {
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.member-social a:hover {
+  background: #ffffff;
+  color: #0d5bd8;
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* RIGHT CARD */
+.contact-form {
+  flex: 1.3;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #212529;
+}
+
+.contact-form p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
   gap: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 16px;
+  width: 100%;
+  padding: 14px 16px;
   font-size: 14px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .contact-form textarea {
-  min-height: 230px;
   resize: none;
+  height: 160px;
 }
 
-.form-button {
-  grid-column: span 2;
-  margin-top: 30px;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0d5bd8;
 }
 
-.form-button button {
-  background-color: var(--primary);
-  color: #000;
+/* BUTTON */
+.contact-form button {
+  background-color: #0d5bd8;
+  color: #ffffff;
   border: none;
-  padding: 14px 40px;
-  font-weight: bold;
-  border-radius: 4px;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.form-button button:hover {
-  background-color: #e0b700;
+.contact-form button:hover {
+  background-color: #f2e70b;
 }
 
-/* =====================
-   FOOTER
-===================== */
-
-.footer {
-  background-color: #ffffff;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-social {
-  display: flex;
-  gap: 14px;
-}
-
-.footer-social a {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #212529;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-social a:hover {
-  background-color: var(--primary);
-  color: #000;
-}
-
-/* =====================
-   RESPONSIVE
-===================== */
-
-@media (max-width: 768px) {
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
-
-  .form-button {
-    grid-column: span 1;
-  }
-
-  .footer {
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
     flex-direction: column;
-    gap: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
   }
 }
+
 
 /* =====================
    ANIMATION
