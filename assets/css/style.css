@@ -68,7 +68,7 @@ header {
   height: 100vh;
   background:
     linear-gradient(rgba(214, 197, 197, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/hero-bg.jpg") center / cover no-repeat;
+    url("../images/hero-bg.jpeg") center / cover no-repeat;
 
   display: flex;
   justify-content: center;
@@ -458,9 +458,8 @@ header {
 
 .contact-hero {
   min-height: 100vh;
-  background: url("../images/map-image.PNG") center / cover no-repeat;
+  background: url("../images/map-image.jpg") center / cover no-repeat;
   position: relative;
-  padding-top: 160px;
 }
 
 .contact-overlay {
