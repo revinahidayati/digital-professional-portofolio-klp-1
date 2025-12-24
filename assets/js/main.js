@@ -22,3 +22,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+// teks yang mau ditampilkan
+let text = "Welcome, To Our Portfolio";
+
+// penanda huruf ke berapa
+let i = 0;
+
+function showText() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text[i];
+    i++;
+    setTimeout(showText, 80);
+  }
+}
+
+// jalankan saat halaman dibuka
+document.addEventListener("DOMContentLoaded", showText);
+
+
+
+
