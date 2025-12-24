@@ -1,78 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <title>DIGIFOLIO | Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS PATH BENAR (NAIK 1 FOLDER) -->
+  <!-- CSS -->
   <link rel="stylesheet" href="../assets/css/variables.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
   <nav class="navbar">
     <h1 class="logo">DIGIFOLIO</h1>
     <ul class="nav-menu">
       <li><a href="../index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<!-- =====================
-     Projects Section
-     ===================== -->
+<!-- ================= MAIN ================= -->
+<main>
+
 <section class="projects">
   <div class="projects-wrapper">
 
     <h2 class="section-title">PROJECTS</h2>
     <p class="section-subtitle">
-      Some projects that we have worked on
+      Proyek yang telah dikerjakan oleh anggota kelompok sebagai bagian dari
+      pembelajaran dan pengalaman di bidang teknologi informasi.
     </p>
 
     <div class="projects-grid">
 
-      <!-- Project 1 -->
+      <!-- =================================================
+           PROJECT 1 : Sistem Informasi DISNAKERIN
+      ================================================= -->
       <div class="project-card">
-        <div class="project-image">
-          <img src="../assets/images/project1.jpg" alt="Portfolio Website">
-        </div>
-        <div class="project-content">
-          <h3>Portfolio Website</h3>
-          <p>Personal portfolio website built using HTML, CSS, and JavaScript.</p>
-        </div>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
         <div class="project-image">
-          <img src="../assets/images/project2.jpg" alt="Landing Page">
+          <img src="../assets/images/disnakerin-login.jpg"
+               alt="Sistem Informasi Pengelolaan Data Ketenagakerjaan DISNAKERIN Padang">
         </div>
-        <div class="project-content">
-          <h3>Landing Page</h3>
-          <p>Responsive landing page design for academic purposes.</p>
-        </div>
-      </div>
 
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="../assets/images/project3.jpg" alt="Web Application">
-        </div>
         <div class="project-content">
-          <h3>Web Application</h3>
-          <p>Simple web application implementing basic JavaScript logic.</p>
+          <h3>Sistem Informasi Pengelolaan Data Ketenagakerjaan Berbasis Web</h3>
+
+          <p style="font-size:14px; color:#6c757d;">
+            <strong>Nama:</strong> Revina Hidayati<br>
+            <strong>Instansi:</strong> Dinas Tenaga Kerja dan Perindustrian Kota Padang
+          </p>
+
+          <p>
+            Proyek ini merupakan pengembangan sistem informasi berbasis web
+            untuk pengelolaan data ketenagakerjaan yang dikerjakan selama
+            kegiatan magang di Dinas Komunikasi dan Informatika Kota Padang.
+            Sistem ini mendukung pengelolaan laporan perusahaan, distribusi
+            tenaga kerja, serta visualisasi data dalam bentuk tabel dan grafik.
+          </p>
+
+          <p>
+            <strong>Kontribusi:</strong><br>
+            Pembuatan tampilan antarmuka (UI), fitur login, serta membantu
+            pengembangan API sistem.
+          </p>
+
+          <p>
+            <strong>Teknologi:</strong><br>
+            Laravel, Laragon, MySQL, HTML, CSS
+          </p>
+
+          <a href="https://github.com/revinahidayati/disnakerinpadang.git"
+             target="_blank"
+             style="display:inline-block; margin-top:12px; font-weight:600; color:#2563eb; text-decoration:none;">
+            🔗 Repository GitHub
+          </a>
         </div>
+
       </div>
+      <!-- ================= END PROJECT 1 ================= -->
+
+      <!-- =================================================
+           PROJECT 2 : Website Portofolio Pribadi
+      ================================================= -->
+      <div class="project-card">
+
+        <div class="project-image">
+          <img src="../assets/images/portofolio-revina.jpg"
+               alt="Website Portofolio Pribadi Revina Hidayati">
+        </div>
+
+        <div class="project-content">
+          <h3>Website Portofolio Pribadi Sederhana</h3>
+
+          <p style="font-size:14px; color:#6c757d;">
+            <strong>Nama:</strong> Revina Hidayati
+          </p>
+
+          <p>
+            Proyek ini merupakan pembuatan website portofolio pribadi sederhana
+            yang dikerjakan pada semester 2. Website ini digunakan untuk
+            menampilkan biodata diri, riwayat pendidikan, keterampilan, serta
+            pengalaman kerja dan organisasi secara online.
+          </p>
+
+          <p>
+            <strong>Tujuan:</strong><br>
+            Sebagai media personal branding dan publikasi portofolio pribadi
+            secara mandiri.
+          </p>
+
+          <p>
+            <strong>Teknologi:</strong><br>
+            HTML, CSS, JavaScript
+          </p>
+
+          <div style="margin-top:12px;">
+            <a href="https://revinahidayati.github.io/Portofolio-Revina/"
+               target="_blank"
+               style="margin-right:16px; font-weight:600; color:#2563eb; text-decoration:none;">
+              🌐 Lihat Demo
+            </a>
+
+            <a href="https://github.com/revinahidayati/Portofolio-Revina.git"
+               target="_blank"
+               style="font-weight:600; color:#2563eb; text-decoration:none;">
+              💻 Repository GitHub
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- ================= END PROJECT 2 ================= -->
 
     </div>
   </div>
 </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
+</footer>
 
 </body>
 </html>
