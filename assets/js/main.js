@@ -1,45 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
+const textWelcome = "Welcome To Our Portfolio";
+const typing = document.getElementById("typing");
 
-  const buttons = document.querySelectorAll(".about-inline-buttons button");
-  const boxes = document.querySelectorAll(".detail-box");
-
-  // ⛔ kalau bukan halaman about, hentikan JS
-  if (buttons.length === 0 || boxes.length === 0) {
-    return;
-  }
-
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const target = button.dataset.target;
-
-      boxes.forEach(box => box.classList.remove("active"));
-
-      const activeBox = document.getElementById(target);
-      if (activeBox) {
-        activeBox.classList.add("active");
-      }
-    });
-  });
-
-});
-
-// teks yang mau ditampilkan
-let text = "Welcome, To Our Portfolio";
-
-// penanda huruf ke berapa
 let i = 0;
+let hapus = false;
 
-function showText() {
-  if (i < text.length) {
-    document.getElementById("typing").innerHTML += text[i];
+function jalaninTyping() {
+  
+  if (!typing) return;
+
+  if (!hapus) {
+    typing.textContent = textWelcome.slice(0, i + 1);
     i++;
-    setTimeout(showText, 80);
+
+    if (i === textWelcome.length) {
+      setTimeout(() => {
+        hapus = true;
+      }, 150);
+    }
+  } else {
+    typing.textContent = textWelcome.slice(0, i - 1);
+    i--;
+
+    if (i === 0) {
+      hapus = false;
+    }
   }
+
+  setTimeout(jalaninTyping, hapus ? 70 : 130);
 }
 
-// jalankan saat halaman dibuka
-document.addEventListener("DOMContentLoaded", showText);
-
-
-
-
+// jalan saat halaman home kebuka
+document.addEventListener("DOMContentLoaded", () => {
+  jalaninTyping();
+});
