@@ -710,7 +710,6 @@ body {
   margin-bottom: 6px;
 }
 
-<<<<<<< HEAD
 /* ===============================
    EDUCATION MODAL (POPUP)
    TIDAK MENGGANGGU ABOUT TIMELINE
@@ -795,26 +794,6 @@ body {
   font-weight: bold;
 }
 
-
-/* =====================
-   ANIMATION
-===================== */
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-=======
->>>>>>> 4f47fdf43f1ccf6d08cf985cb91b140c257385d7
 /* PROJECTS */
 .projects {
   padding: 50px 0 50px; 
@@ -1246,6 +1225,4 @@ main {
     transform: translateY(0) scale(1);
   }
 }
-
-
 
