@@ -1294,6 +1294,85 @@ footer p {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* ===============================
+   RESPONSIVE ABOUT (MOBILE FIX)
+=============================== */
+@media (max-width: 768px) {
+
+  .about-timeline {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-subtitle {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  /* timeline jadi satu kolom */
+  .timeline::before {
+    left: 24px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding: 20px 20px 20px 80px;
+    text-align: left;
+    left: 0;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  /* card full width */
+  .timeline-content {
+    width: 100%;
+  }
+
+  /* foto pindah ke kiri */
+  .timeline-circle {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: -8px;
+    right: auto;
+    border-width: 4px;
+  }
+
+  .timeline-circle::after {
+    height: 80px;
+  }
+
+  /* tombol rapi di mobile */
+  .about-buttons {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .about-buttons button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  /* modal biar tidak kepotong */
+  .education-modal-content {
+    padding: 30px 20px;
+  }
+
+  .education-modal-content h1 {
+    font-size: 20px;
+  }
+
+  #eduName {
+    font-size: 13px;
+  }
+}
 
 /* =====================
    ANIMATION
