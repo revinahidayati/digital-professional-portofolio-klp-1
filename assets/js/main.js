@@ -152,3 +152,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
+// hamburger menu
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    // Tutup menu SAAT item diklik, tapi hamburger tetap ada
+    navMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
+      });
+    });
+  }
+});
