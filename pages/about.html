@@ -4,125 +4,149 @@
   <meta charset="UTF-8">
   <title>DIGIFOLIO | About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/css/variables.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
+
 <header>
   <nav class="navbar">
     <h1 class="logo">DIGIFOLIO</h1>
-    <ul class="nav-menu">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    
+
+    <div class="nav-right">
+      <ul class="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div id="Mode">
+        <div id="switch"></div>
+        <label id="inner-text">Dark</label>
+      </div>
+    </div>
   </nav>
 </header>
 
 <section class="about-timeline">
   <div class="timeline-wrapper">
-    <div class="timeline">
-      <div class="timeline-item left">
-        <div class="timeline-content about-card">
 
-          <h3 class="about-name">Revina Hidayati</h3>
-          <p class="about-short">
-            Asal: Padang Panjang<br>
-            Jurusan: Sistem Informasi
-          </p>
+    <h2 class="section-title">THE PEOPLE</h2>
+    <p class="section-subtitle">
+      "Meet the people behind the ideas and the work"
+    </p>
 
-          <div class="about-buttons">
-            <button data-target="edu">Pendidikan</button>
-            <button data-target="exp">Pengalaman</button>
-            <button data-target="skill">Skills</button>
-          </div>
+    <!-- REVINA -->
+    <div class="timeline-item left">
+      <div class="timeline-content about-card">
+        <h3 class="about-name">Revina Hidayati</h3>
+        <p class="timeline-motto">"Orang baik pasti ada jalannya"</p>
 
+        <div class="biodata-card">
+          <table class="biodata-table">
+            <tr><td class="label">Asal</td><td>Padang Panjang</td></tr>
+            <tr><td class="label">Jurusan</td><td>Sistem Informasi</td></tr>
+          </table>
         </div>
-            <div class="timeline-circle"></div>
+
+        <div class="about-buttons">
+          <button data-type="pendidikan" data-id="1">Pendidikan</button>
+          <button data-type="pengalaman" data-id="1">Pengalaman</button>
+          <button data-type="skills" data-id="1">Skills</button>
+        </div>
+      </div>
+      <div class="timeline-circle revina"></div>
     </div>
-</div>
+
+    <!-- DELVINA -->
+    <div class="timeline-item right">
+      <div class="timeline-content about-card">
+        <h3 class="about-name">Delvina</h3>
+        <p class="timeline-motto">"Jadilah pribadi yang bermanfaat dalam setiap peran dan kesempatan"</p>
+
+        <div class="biodata-card">
+          <table class="biodata-table">
+            <tr><td class="label">Asal</td><td>Pasaman Barat</td></tr>
+            <tr><td class="label">Jurusan</td><td>Sistem Informasi</td></tr>
+          </table>
+        </div>
+
+        <div class="about-buttons">
+          <button data-type="pendidikan" data-id="2">Pendidikan</button>
+          <button data-type="pengalaman" data-id="2">Pengalaman</button>
+          <button data-type="skills" data-id="2">Skills</button>
+        </div>
+      </div>
+      <div class="timeline-circle delvina"></div>
+    </div>
+
+    <!-- ELKA -->
+    <div class="timeline-item left">
+      <div class="timeline-content about-card">
+        <h3 class="about-name">Elka Bella</h3>
+        <p class="timeline-motto">"Bertumbuh dengan integritas, bekerja dengan tanggung jawab."</p>
+
+        <div class="biodata-card">
+          <table class="biodata-table">
+            <tr><td class="label">Asal</td><td>Jambi</td></tr>
+            <tr><td class="label">Jurusan</td><td>Sistem Informasi</td></tr>
+          </table>
+        </div>
+
+        <div class="about-buttons">
+          <button data-type="pendidikan" data-id="3">Pendidikan</button>
+          <button data-type="pengalaman" data-id="3">Pengalaman</button>
+          <button data-type="skills" data-id="3">Skills</button>
+        </div>
+      </div>
+      <div class="timeline-circle elkabella"></div>
+    </div>
+
+    <!-- AKSIOMA -->
+    <div class="timeline-item right">
+      <div class="timeline-content about-card">
+        <h3 class="about-name">Aksioma Arora</h3>
+        <p class="timeline-motto">
+          "Hidup itu pilihan, pilihlah yang terbaik. Jangan pernah menyerah, karena kegagalan adalah langkah menuju kesuksesan."
+        </p>
+
+        <div class="biodata-card">
+          <table class="biodata-table">
+            <tr><td class="label">Asal</td><td>Pariaman</td></tr>
+            <tr><td class="label">Jurusan</td><td>Sistem Informasi</td></tr>
+          </table>
+        </div>
+
+        <div class="about-buttons">
+          <button data-type="pendidikan" data-id="4">Pendidikan</button>
+          <button data-type="pengalaman" data-id="4">Pengalaman</button>
+          <button data-type="skills" data-id="4">Skills</button>
+        </div>
+      </div>
+      <div class="timeline-circle aksioma"></div>
+    </div>
+
   </div>
 </section>
 
-
+<!-- MODAL -->
 <div class="education-modal" id="educationModal">
   <div class="education-modal-content">
-
-    <span class="education-modal-close" onclick="closeEducation()">×</span>
-
-    <h1 id="eduTitle">RIWAYAT PENDIDIKAN</h1>
-    <em id="eduName">Nama</em>
-
-    
+    <span class="education-modal-close">×</span>
+    <h1 id="eduTitle">DETAIL</h1>
+    <em id="eduName"></em>
     <div class="education-modal-desc" id="eduContent"></div>
-
-    <button class="education-modal-btn" onclick="closeEducation()">
-      × CLOSE PROJECT
-    </button>
-
   </div>
 </div>
 
-  <footer>
-    <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
+</footer>
 
 <script src="../assets/js/main.js"></script>
-
-
-<script>
-const educationData = {
-  1: {
-    name: "Revina Hidayati",
-    content: `
-      SDN 07 Silaing Bawah (2010–2016)<br>
-      SMPN 1 Padang Panjang (2016–2019)<br>
-      SMAN 1 Padang Panjang (2019–2022)<br>
-      Universitas Adzkia (2023–Sekarang)
-    `
-  },
-  2: {
-    name: "Delvina",
-    content: `
-      SDN 01 Sungai Beremas (2010–2016)<br>
-      SMPN 1 Sungai Beremas (2017–2020)<br>
-      SMAN 1 Sungai Beremas (2020–2023)<br>
-      Universitas Adzkia (2023–Sekarang)
-    `
-  },
-  3: {
-    name: "Elka Bella",
-    content: `
-      SDN 220 Sekar Mengkuang (2010–2016)<br>
-      SMPN 2 LLM (2017–2019)<br>
-      SMKN 7 Bungo (2019–2022)<br>
-      Universitas Adzkia (2023–Sekarang)
-    `
-  },
-  4: {
-    name: "Aksioma Arora",
-    content: `
-      SDN 06 Sungai Geringging (2010–2016)<br>
-      SMPN 2 Sungai Geringging (2017–2019)<br>
-      SMAN 1 Sungai Geringging (2019–2022)<br>
-      Universitas Adzkia (2023–Sekarang)
-    `
-  }
-};
-
-function openEducation(id) {
-  document.getElementById("eduName").innerHTML = educationData[id].name;
-  document.getElementById("eduContent").innerHTML = educationData[id].content;
-  document.getElementById("educationModal").classList.add("active");
-}
-
-function closeEducation() {
-  document.getElementById("educationModal").classList.remove("active");
-}
-</script>
-
 </body>
 </html>
