@@ -33,7 +33,6 @@ header {
   align-items: center;
 }
 
-
 .navbar {
   width: 90%;
   max-width: 1200px;
@@ -104,15 +103,67 @@ header {
 }
 
 .hero {
-  height: 100vh;
-  background:
-    linear-gradient(rgba(214, 197, 197, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/hero-bg.jpeg") center / cover no-repeat;
-
+  position: relative;
+  min-height: calc(100vh - 72px); /* aman dengan navbar fixed */
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-action {
+  margin-top: 28px;
   text-align: center;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 38px;
+
+  background: var(--primary);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.hero-glass {
+  position: relative;
+  z-index: 2;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 18px;
+  padding: 48px 40px;
+  max-width: 900px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  animation: glassFadeUp 1s ease forwards;
 }
 
 .hero-content {
@@ -146,6 +197,9 @@ header {
   100% { opacity: 1; }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* =====================
    ABOUT TIMELINE
@@ -499,6 +553,11 @@ header {
   background-color: #f4f7fb;
 }
 
+#contact {
+  scroll-margin-top: 90px;
+}
+
+
 .contact-container {
   width: 90%;
   max-width: 1200px;
@@ -510,7 +569,7 @@ header {
 /* LEFT CARD */
 .contact-info {
   flex: 1;
-  background-color: #0d5bd8;
+  background-color: #000000;
   color: #ffffff;
   padding: 40px;
   border-radius: 16px;
@@ -571,7 +630,7 @@ header {
 
 .member-social a:hover {
   background: #ffffff;
-  color: #0d5bd8;
+  color: #000000;
   transform: scale(1.1);
 }
 
@@ -630,7 +689,7 @@ header {
 
 /* BUTTON */
 .contact-form button {
-  background-color: #0d5bd8;
+  background-color: #000000;
   color: #ffffff;
   border: none;
   padding: 14px 36px;
@@ -641,7 +700,7 @@ header {
 }
 
 .contact-form button:hover {
-  background-color: #f2e70b;
+  background-color: #ffc800;
 }
 
 /* RESPONSIVE */
@@ -670,5 +729,17 @@ header {
     transform: translateY(0);
   }
 }
+
+@keyframes glassFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 
 

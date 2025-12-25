@@ -32,20 +32,32 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        
-        <h1 class="hero-title">
-          <span id="typing"></span>
-        </h1>
+     <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/video/bg-video.mp4" type="video/mp4">
+        </video>
 
-        <p class="hero-subtitle">
-          Website ini dibuat sebagai portofolio digital untuk menampilkan profil,
-          keterampilan, serta proyek yang telah dikerjakan oleh anggota kelompok
-          dalam bidang teknologi dan pengembangan web.
-        </p>
+      <div class="hero-overlay"></div>
+        <div class="hero-glass">
+          <div class="hero-content">
 
-      </div>
+            <h1 class="hero-title">
+              <span id="typing"></span>
+            </h1>
+
+              <p class="hero-subtitle">
+                Website ini dibuat sebagai portofolio digital untuk menampilkan profil,
+                keterampilan, serta proyek yang telah dikerjakan oleh anggota kelompok
+                dalam bidang teknologi dan pengembangan web.
+              </p>
+
+            <div class="hero-action">
+              <a href="#contact" class="hero-btn">Contact Us</a>
+            </div>
+
+          </div>
+        </div>
+
     </section>
 
     <section class="projects">
@@ -257,7 +269,8 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
+
             <div class="contact-container">
 
               <div class="contact-info">
