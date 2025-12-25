@@ -196,31 +196,381 @@ header {
   left: -15px;
 }
 
-/* =====================
-   INLINE BUTTON (ABOUT)
-===================== */
-
-.about-inline-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 12px;
+/* ===============================
+   RESET DASAR
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.about-inline-buttons button {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===============================
+   ABOUT TIMELINE SECTION
+=============================== */
+.about-timeline {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.timeline-wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===============================
+   TIMELINE CORE
+=============================== */
+.timeline {
+  position: relative;
+}
+
+/* garis tengah */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #e0e0e0;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* ===============================
+   TIMELINE ITEM
+=============================== */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* ===============================
+   CARD / CONTENT
+=============================== */
+.timeline-content {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 14px;
+  position: relative;
+  z-index: 10;
+}
+
+.about-name {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.about-short {
+  font-size: 14px;
+  color: #444;
+}
+
+/* ===============================
+   BUTTON
+=============================== */
+.about-buttons {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 20;
+}
+
+.timeline-item.right .about-buttons {
+  justify-content: flex-start;
+}
+
+.about-buttons button {
   padding: 6px 14px;
   font-size: 13px;
   background: transparent;
   border: 1px solid #999;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  text-transform: lowercase;
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
 }
 
-.about-inline-buttons button:hover {
-  background-color: #eaeaea;
+.about-buttons button:hover {
+  background: #eaeaea;
 }
+
+
+/* ===============================
+   TIMELINE CIRCLE (FOTO)
+=============================== */
+.timeline-circle {
+  position: absolute;
+  right: -45px;
+  top: -10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid #FFD000;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 3;
+}
+
+.timeline-circle::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 140px;
+  background: #ddd;      
+
+  z-index: -1;
+}
+
+.timeline-item.left .timeline-circle {
+  right: -35px;
+}
+
+.timeline-item.right .timeline-circle {
+  left: -35px;
+  right: auto;
+}
+
+.timeline-circle.revina {
+  background-image: url("../img/IMG-20250501-WA0096.jpg");
+}
+
+.timeline-circle.delvina {
+  background-image: url("../img/IMG-20251223-WA0000.jpg");
+}
+
+.timeline-circle.elkabella {
+  background-image: url("../img/IMG-20251223-WA0015.jpg");
+}
+
+.timeline-circle.aksioma {
+  background-image: url("../img/IMG_7605.PNG");
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.navbar {
+  background: #000;
+  color: #fff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  width: 400px;
+}
+
+.about-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #FFD000;
+  background: transparent;
+  cursor: pointer;
+}
+
+.about-buttons button:hover {
+  background: #FFD000;
+}
+
+.education-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-modal.active {
+  display: flex;
+}
+
+.education-modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 500px;
+}
+
+#eduName {
+  display: block;
+  text-align: center;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.edu-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.edu-table tr:hover {
+  background: #fff7cc;
+}
+
+.biodata-card {
+  margin-top: 14px;
+}
+
+.biodata-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fafafa;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.biodata-table td {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.biodata-table .label {
+  width: 35%;
+  font-weight: 600;
+  color: #b38f00;
+  background: #fff6cc;
+}
+
+.biodata-table tr:not(:last-child) td {
+  border-bottom: 1px solid #eee;
+}
+.nav-menu a.active {
+  color: #FFD000;
+  font-weight: 600;
+  border-bottom: 2px solid #FFD000;
+}
+
+
+
+/* ===============================
+   DETAIL SECTION
+=============================== */
+.about-detail-inline {
+  max-width: 850px;
+  margin: 70px auto 0;
+}
+
+.detail-box {
+  background: #fafafa;
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  display: none;
+}
+
+.detail-box h4 {
+  margin-bottom: 10px;
+}
+
+.detail-box ul {
+  padding-left: 20px;
+}
+
+.detail-box li {
+  margin-bottom: 6px;
+}
+
+/* ===============================
+   RESPONSIVE (MOBILE)
+=============================== */
+@media (max-width: 768px) {
+
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-circle {
+    left: -5px !important;
+    right: auto;
+  }
+
+  .about-buttons {
+    justify-content: flex-start;
+  }
+}
+
+
 
 /* =====================
    DETAIL CONTENT
@@ -257,6 +607,91 @@ header {
 .detail-box li {
   margin-bottom: 6px;
 }
+
+/* ===============================
+   EDUCATION MODAL (POPUP)
+   TIDAK MENGGANGGU ABOUT TIMELINE
+=============================== */
+
+.education-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.education-modal.active {
+  display: flex;
+}
+
+/* KONTEN MODAL */
+.education-modal-content {
+  width: 90%;
+  max-width: 1000px;
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  animation: fadeUp 0.4s ease;
+}
+
+/* TOMBOL X */
+.education-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* JUDUL */
+.education-modal-content h1 {
+  margin-bottom: 6px;
+}
+
+.education-modal-content em {
+  color: #777;
+  font-size: 14px;
+}
+
+/* GAMBAR */
+.education-modal-image {
+  margin: 40px 0;
+}
+
+.education-modal-image img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* DESKRIPSI */
+.education-modal-desc {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* FOOTER */
+.education-modal-footer {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* BUTTON CLOSE */
+.education-modal-btn {
+  padding: 12px 26px;
+  background: #FFD000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 
 /* =====================
    ANIMATION
