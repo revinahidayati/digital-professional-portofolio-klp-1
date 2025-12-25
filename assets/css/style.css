@@ -356,7 +356,7 @@ html {
 
 /* PROJECTS */
 .projects {
-  padding: 160px 0 100px; /* atas dikasih jarak karena navbar fixed */
+  padding: 50px 0 50px; 
   background-color: #f8f9fa;
 }
 
@@ -453,7 +453,7 @@ html {
    ===================== */
 
 .blog {
-  padding: 160px 10% 100px;
+  padding: 50px 10% 50px;
   background-color: #ffffff;
 }
 
@@ -549,14 +549,13 @@ html {
 ===================== */
 
 .contact {
-  padding: 160px 0 100px;
+  padding: 80px 0 80px;
   background-color: #f4f7fb;
 }
 
 #contact {
   scroll-margin-top: 90px;
 }
-
 
 .contact-container {
   width: 90%;
@@ -574,6 +573,11 @@ html {
   padding: 40px;
   border-radius: 16px;
 }
+
+.contact-info h2 {
+  color: #ffc800; /* contoh: kuning (primary) */
+}
+
 
 /* TEAM GRID INSIDE CONTACT INFO */
 
@@ -652,7 +656,7 @@ html {
 .contact-form h2 {
   font-size: 28px;
   margin-bottom: 16px;
-  color: #212529;
+  color: #ffc800;
 }
 
 .contact-form p {
