@@ -1205,9 +1205,13 @@ footer p {
 }
 
 
-/* ================= HEADER ================= */
+/* ===============================
+   HEADER
+=============================== */
 .header {
   background: #000;
+  position: relative;
+  z-index: 5000; /* paling atas */
 }
 
 .navbar {
@@ -1218,19 +1222,24 @@ footer p {
   position: relative;
 }
 
-/* LOGO */
+/* ===============================
+   LOGO
+=============================== */
 .logo {
   color: #fff;
   font-size: 22px;
   font-weight: 700;
 }
 
-/* RIGHT AREA */
+/* ===============================
+   RIGHT ACTIONS (HAMBURGER + DARK)
+=============================== */
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
-  z-index: 1001; /* DI ATAS MENU */
+  gap: 12px;
+  position: relative;
+  z-index: 5100; /* di atas menu */
 }
 
 /* DARK MODE */
@@ -1238,11 +1247,15 @@ footer p {
   color: #fff;
   font-size: 14px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
-/* ================= HAMBURGER ================= */
+/* ===============================
+   HAMBURGER BUTTON
+=============================== */
 .hamburger {
   cursor: pointer;
+  display: block;
 }
 
 .hamburger span {
@@ -1251,21 +1264,24 @@ footer p {
   height: 3px;
   background: #fff;
   margin: 5px 0;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
-/* ================= MENU ================= */
+/* ===============================
+   MENU DROPDOWN
+=============================== */
 .nav-menu {
   position: absolute;
-  top: 70px;
-  right: 24px;
+  top: 100%;             
+  right: 0;
+  width: 220px;
   background: #000;
   list-style: none;
-  width: 220px;
   padding: 12px 0;
   display: none;
   flex-direction: column;
-  z-index: 1000;
+  z-index: 5000;
+  pointer-events: auto;
 }
 
 .nav-menu.active {
@@ -1273,15 +1289,25 @@ footer p {
 }
 
 .nav-menu li {
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 .nav-menu a {
   color: #fff;
   text-decoration: none;
+  display: block;
+  pointer-events: auto;
+  position: relative;
+  z-index: 5200;
 }
 
-/* ================= ANIMASI ================= */
+.nav-menu a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===============================
+   HAMBURGER ANIMATION (☰ → X)
+=============================== */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -1292,6 +1318,21 @@ footer p {
 
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===============================
+   SAFETY: CONTENT TIDAK MENANGKAP KLIK
+=============================== */
+.timeline-wrapper,
+.timeline-line,
+.timeline-circle,
+.about-timeline,
+section {
+  pointer-events: none;
+}
+
+section * {
+  pointer-events: auto;
 }
 
 /* ===============================
