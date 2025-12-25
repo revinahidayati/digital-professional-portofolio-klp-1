@@ -1,4 +1,4 @@
-const textWelcome = "Welcome To Our Portfolio";
+const textWelcome = " Welcome To Our Portfolio";
 const typing = document.getElementById("typing");
 
 let i = 0;
