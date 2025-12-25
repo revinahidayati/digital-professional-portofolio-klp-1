@@ -44,7 +44,7 @@
     <div class="blog-grid">
 
       <!-- ARTIKEL 1 -->
-      <article class="blog-card">
+      <article class="blog-card" data-category="Sistem Informasi">
         <div class="blog-meta">
           <span class="blog-date">Jurnal Nasional</span>
           <span class="blog-category">Sistem Informasi</span>
@@ -69,7 +69,7 @@
       </article>
 
       <!-- ARTIKEL 2 -->
-      <article class="blog-card">
+      <article class="blog-card" data-category="Bisnis & Teknologi">
         <div class="blog-meta">
           <span class="blog-date">Jurnal Nasional</span>
           <span class="blog-category">Bisnis & Teknologi</span>
@@ -94,7 +94,7 @@
       </article>
 
       <!-- ARTIKEL 3 -->
-      <article class="blog-card">
+      <article class="blog-card" data-category="Pendidikan">
         <div class="blog-meta">
           <span class="blog-date">Jurnal Nasional</span>
           <span class="blog-category">Pendidikan</span>
@@ -121,19 +121,15 @@
     </div>
 
     <!-- SIDEBAR -->
-    <aside class="blog-archive">
-      <h4>Kategori</h4>
-      <ul>
-        <li>Sistem Informasi</li>
-        <li>Bisnis & Teknologi</li>
-        <li>Pendidikan</li>
-      </ul>
-
-      <h4>Arsip</h4>
-      <ul>
-        <li>Jurnal Nasional</li>
-      </ul>
-    </aside>
+  <aside class="blog-archive">
+    <h4>Kategori</h4>
+    <ul class="category-list">
+      <li data-filter="all" class="active">Semua</li>
+      <li data-filter="Sistem Informasi">Sistem Informasi</li>
+      <li data-filter="Bisnis & Teknologi">Bisnis & Teknologi</li>
+      <li data-filter="Pendidikan">Pendidikan</li>
+    </ul>
+  </aside>
 
   </div>
 </section>
@@ -145,5 +141,6 @@
   <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
 </footer>
 
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

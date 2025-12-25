@@ -33,3 +33,27 @@ function jalaninTyping() {
 document.addEventListener("DOMContentLoaded", () => {
   jalaninTyping();
 });
+
+  const categoryItems = document.querySelectorAll('.category-list li');
+  const blogCards = document.querySelectorAll('.blog-card');
+
+  categoryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      // hapus active sebelumnya
+      categoryItems.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+
+      const filter = item.getAttribute('data-filter');
+
+      blogCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+  

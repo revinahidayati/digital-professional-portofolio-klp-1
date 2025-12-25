@@ -19,6 +19,12 @@ body {
   line-height: 1.6;
   background-color: var(--light);
   padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
 }
 
 header {
@@ -452,7 +458,10 @@ html {
    BLOG PAGE STYLING
    ===================== */
 
-.blog {
+main {
+  flex: 1;
+}
+   .blog {
   padding: 50px 10% 50px;
   background-color: #ffffff;
 }
@@ -536,6 +545,23 @@ html {
   margin-bottom: 8px;
   color: #334155;
 }
+
+.category-list li {
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.category-list li:hover {
+  color: var(--primary);
+}
+
+.category-list li.active {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+
 
 /* RESPONSIVE BLOG */
 @media (max-width: 768px) {
