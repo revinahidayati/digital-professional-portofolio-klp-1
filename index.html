@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Portofolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -13,34 +13,329 @@
     <nav class="navbar">
       <h1 class="logo">DIGIFOLIO</h1>
 
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/about.html">About</a></li>
-        <li><a href="pages/projects.html">Projects</a></li>
-        <li><a href="pages/blog.html">Blog</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <div class="nav-right">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+
+    <div id="Mode">
+      <div id="switch"></div>
+      <label id="inner-text">Dark</label>
+    </div>
+  </div>
+</nav>
+
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="hero-subtitle">
-          <h1>Welcome To Our Portfolio</h1>
-      
-          Website ini dibuat sebagai portofolio digital untuk menampilkan profil,
-          keterampilan, serta proyek yang telah dikerjakan oleh anggota kelompok
-          dalam bidang teknologi dan pengembangan web. 
-        </p>
-      </div>
+     <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/video/bg-video.mp4" type="video/mp4">
+        </video>
+
+      <div class="hero-overlay"></div>
+        <div class="hero-glass">
+          <div class="hero-content">
+
+            <h1 class="hero-title">
+              <span id="typing"></span>
+            </h1>
+
+              <p class="hero-subtitle">
+                Website ini dibuat sebagai portofolio digital untuk menampilkan profil,
+                keterampilan, serta proyek yang telah dikerjakan oleh anggota kelompok
+                dalam bidang teknologi dan pengembangan web.
+              </p>
+
+            <div class="hero-action">
+              <a href="#contact" class="hero-btn">Contact Us</a>
+            </div>
+
+          </div>
+        </div>
+
     </section>
+
+    <section class="projects">
+  <div class="projects-wrapper">
+
+    <h2 class="section-title">PROJECTS</h2>
+    <p class="section-subtitle">
+      Proyek yang telah dikerjakan oleh anggota kelompok sebagai bagian dari
+      pembelajaran dan pengalaman di bidang teknologi informasi.
+    </p>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <!--project 1  -->
+        <div class="project-image">
+          <img src="assets/images/disnakerin-login.jpg"
+               alt="Sistem Informasi Pengelolaan Data Ketenagakerjaan DISNAKERIN Padang">
+        </div>
+
+        <div class="project-content">
+          <h3>Sistem Informasi Pengelolaan Data Ketenagakerjaan Berbasis Web</h3>
+
+          <p style="font-size:14px; color:#6c757d;">
+            <strong>Nama:</strong> Revina Hidayati<br>
+            <strong>Instansi:</strong> Dinas Tenaga Kerja dan Perindustrian Kota Padang
+          </p>
+
+          <p>
+            Proyek ini merupakan pengembangan sistem informasi berbasis web
+            untuk pengelolaan data ketenagakerjaan yang dikerjakan selama
+            kegiatan magang di Dinas Komunikasi dan Informatika Kota Padang.
+            Sistem ini mendukung pengelolaan laporan perusahaan, distribusi
+            tenaga kerja, serta visualisasi data dalam bentuk tabel dan grafik.
+          </p>
+
+          <p>
+            <strong>Kontribusi:</strong><br>
+            Pembuatan tampilan antarmuka (UI), fitur login, serta membantu
+            pengembangan API sistem.
+          </p>
+
+          <p>
+            <strong>Teknologi:</strong><br>
+            Laravel, Laragon, MySQL, HTML, CSS
+          </p>
+
+          <a href="https://github.com/revinahidayati/disnakerinpadang.git"
+             target="_blank"
+             style="display:inline-block; margin-top:12px; font-weight:600; color:#2563eb; text-decoration:none;">
+            🔗 Repository GitHub
+          </a>
+        </div>
+
+      </div>
+      <!-- project 2 -->
+      <div class="project-card">
+
+        <div class="project-image">
+          <img src="assets/images/portofolio-revina.jpg"
+               alt="Website Portofolio Pribadi Revina Hidayati">
+        </div>
+
+        <div class="project-content">
+          <h3>Website Portofolio Pribadi Sederhana</h3>
+
+          <p style="font-size:14px; color:#6c757d;">
+            <strong>Nama:</strong> Revina Hidayati
+          </p>
+
+          <p>
+            Proyek ini merupakan pembuatan website portofolio pribadi sederhana
+            yang dikerjakan pada semester 2. Website ini digunakan untuk
+            menampilkan biodata diri, riwayat pendidikan, keterampilan, serta
+            pengalaman kerja dan organisasi secara online.
+          </p>
+
+          <p>
+            <strong>Tujuan:</strong><br>
+            Sebagai media personal branding dan publikasi portofolio pribadi
+            secara mandiri.
+          </p>
+
+          <p>
+            <strong>Teknologi:</strong><br>
+            HTML, CSS, JavaScript
+          </p>
+
+          <div style="margin-top:12px;">
+            <a href="https://revinahidayati.github.io/Portofolio-Revina/"
+               target="_blank"
+               style="margin-right:16px; font-weight:600; color:#2563eb; text-decoration:none;">
+              🌐 Lihat Demo
+            </a>
+
+            <a href="https://github.com/revinahidayati/Portofolio-Revina.git"
+               target="_blank"
+               style="font-weight:600; color:#2563eb; text-decoration:none;">
+              💻 Repository GitHub
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="blog">
+        <div class="blog-header">
+          <h2 class="section-title">BLOG & INSIGHTS</h2>
+          <p class="section-subtitle">
+            Ringkasan artikel jurnal nasional dan wawasan teknologi informasi
+          </p>
+        </div>
+
+          <div class="blog-grid">
+
+            <!-- ARTIKEL 1 -->
+            <article class="blog-card">
+              <div class="blog-meta">
+                <span class="blog-date">Jurnal Nasional</span>
+                <span class="blog-category">Sistem Informasi</span>
+              </div>
+
+              <h3 class="blog-title">
+                <a href="blog/article-1.html">
+                  Analisis dan Implementasi Sistem Informasi Berbasis Web
+                </a>
+              </h3>
+
+              <p class="blog-excerpt">
+                Artikel ini membahas analisis serta implementasi sistem informasi
+                berbasis web yang dirancang untuk meningkatkan efisiensi pengolahan
+                data dan penyampaian informasi. Penelitian ini dipublikasikan dalam
+                jurnal ilmiah nasional dan relevan dengan pengembangan aplikasi web.
+              </p>
+
+              <a href="blog/article-1.html" class="blog-link">
+                Baca Selengkapnya →
+              </a>
+            </article>
+
+            <!-- ARTIKEL 2 -->
+            <article class="blog-card">
+              <div class="blog-meta">
+                <span class="blog-date">Jurnal Nasional</span>
+                <span class="blog-category">Bisnis & Teknologi</span>
+              </div>
+
+              <h3 class="blog-title">
+                <a href="blog/article-2.html">
+                  Pengembangan Bisnis dalam Pembuatan Website
+                </a>
+              </h3>
+
+              <p class="blog-excerpt">
+                Artikel jurnal ini membahas pengembangan bisnis dalam pembuatan website
+                sebagai sarana promosi dan pengembangan usaha. Pembahasan meliputi
+                analisis kebutuhan klien, perancangan sistem, hingga implementasi
+                website yang mendukung tujuan bisnis.
+              </p>
+
+              <a href="blog/article-2.html" class="blog-link">
+                Baca Selengkapnya →
+              </a>
+            </article>
+
+            <!-- ARTIKEL 3 -->
+            <article class="blog-card">
+              <div class="blog-meta">
+                <span class="blog-date">Jurnal Nasional</span>
+                <span class="blog-category">Pendidikan</span>
+              </div>
+
+              <h3 class="blog-title">
+                <a href="blog/article-3.html">
+                  Pemanfaatan Sistem Informasi dalam Dunia Pendidikan
+                </a>
+              </h3>
+
+              <p class="blog-excerpt">
+                Artikel ini mengkaji pemanfaatan sistem informasi dalam dunia pendidikan
+                untuk mendukung pengelolaan data akademik dan proses pembelajaran.
+                Penerapan teknologi informasi dinilai mampu meningkatkan efektivitas
+                dan kualitas layanan pendidikan.
+              </p>
+
+              <a href="blog/article-3.html" class="blog-link">
+                Baca Selengkapnya →
+              </a>
+            </article>
+      </section>
+
+      <section class="contact" id="contact">
+
+            <div class="contact-container">
+
+              <div class="contact-info">
+            <h2>Contact Team</h2>
+            <p>Hubungi kami melalui media sosial masing-masing anggota tim.</p>
+
+            <div class="team-grid">
+
+              <div class="team-member">
+                <h4>Revina Hidayati</h4>
+                <span class="role">UI/UX Designer</span>
+
+                <div class="member-social">
+                  <a href="https://instagram.com/revinahanur" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://github.com/revinahidayati" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="team-member">
+                <h4>Delvina</h4>
+                <span class="role">Frontend Developer</span>
+
+                <div class="member-social">
+                  <a href="https://instagram.com/finaag12"><i class="fab fa-instagram"></i></a>
+                  <a href="https://github.com/delvina-vina"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+
+              <div class="team-member">
+                <h4>Elka Bella</h4>
+                <span class="role">Backend Developer</span>
+
+                <div class="member-social">
+                  <a href="https://instagram.com/elka.bella"><i class="fab fa-instagram"></i></a>
+                  <a href="https://github.com/elkabella"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+
+              <div class="team-member">
+                <h4>Aksioma Arora</h4>
+                <span class="role">Documentation</span>
+
+                <div class="member-social">
+                  <a href="https://instagram.com/aksiomaarora"><i class="fab fa-instagram"></i></a>
+                  <a href="https://github.com/aksiomaaroraak-ui"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+              <div class="contact-form">
+                <h2>Get In Touch</h2>
+                <p>Silakan isi form di bawah ini untuk mengirim pesan.</p>
+
+                <form>
+                  <div class="form-row">
+                    <input type="text" placeholder="Your Name*" required>
+                    <input type="email" placeholder="Your Email*" required>
+                  </div>
+
+                  <input type="text" placeholder="Subject*">
+                  <textarea placeholder="Message*" required></textarea>
+
+                  <button type="submit">Send Message</button>
+                </form>
+              </div>
+
+            </div>
+      </section>
+
+
   </main>
 
   <footer>
     <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
   </footer>
     
-    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
