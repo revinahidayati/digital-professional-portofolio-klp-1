@@ -34,7 +34,6 @@ header {
   height: 72px;
   background-color: #101111;
   z-index: 1000;
-
   display: flex;
   align-items: center;
 }
@@ -476,14 +475,6 @@ body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   margin: 0;
-}
-
-.navbar {
-  background: #000;
-  color: #fff;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .nav-menu {
@@ -1054,7 +1045,7 @@ main {
 .contact-info {
   flex: 1;
   background-color: #636262;
-  color: #000000;
+  color: #ffffff;
   padding: 40px;
   border-radius: 16px;
 }
