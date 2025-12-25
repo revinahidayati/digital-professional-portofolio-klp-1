@@ -1209,17 +1209,12 @@ footer p {
    HEADER
 =============================== */
 .header {
-  background: #000;
-  position: relative;
-  z-index: 5000; /* paling atas */
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 24px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 72px;
+  background-color: #101111;
+  z-index: 99999;
 }
 
 /* ===============================
@@ -1323,26 +1318,23 @@ footer p {
 /* ===============================
    SAFETY: CONTENT TIDAK MENANGKAP KLIK
 =============================== */
-.timeline-wrapper,
-.timeline-line,
-.timeline-circle,
-.about-timeline,
-section {
+.timeline,
+.timeline::before,
+.timeline-circle {
   pointer-events: none;
 }
 
-section * {
+.timeline-content,
+.timeline-content * {
   pointer-events: auto;
 }
+
 
 /* ===============================
    RESPONSIVE ABOUT (MOBILE FIX)
 =============================== */
 @media (max-width: 768px) {
 
-  .about-timeline {
-    padding: 60px 16px;
-  }
 
   .section-title {
     font-size: 24px;
