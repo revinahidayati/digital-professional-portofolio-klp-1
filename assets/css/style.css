@@ -206,10 +206,103 @@ html {
   scroll-behavior: smooth;
 }
 
-/* about section */
+/* =====================
+   ABOUT TIMELINE
+===================== */
+
+.about-timeline {
+  padding: 160px 0 100px;
+  background-color: #000000;
+}
+
+.timeline-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+/* garis tengah */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #e9ecef;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-content {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.timeline-content h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.timeline-content h4 {
+  color: #6c757d;
+  margin-bottom: 6px;
+}
+
+.about-short {
+  font-size: 14px;
+  color: #555;
+}
+
+/* titik timeline */
+.timeline-circle {
+  position: absolute;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left .timeline-circle {
+  right: -15px;
+}
+
+.timeline-item.right .timeline-circle {
+  left: -15px;
+}
+
+/* ===============================
+   ABOUT TIMELINE SECTION
+=============================== */
 .about-timeline {
   padding: 80px 20px;
-  background: #151515;
+  background: #fff;
 }
 
 .timeline-wrapper {
@@ -220,17 +313,20 @@ html {
 .section-title {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .section-subtitle {
   text-align: center;
   max-width: 700px;
   margin: 0 auto 60px;
-  color: #ffffff;
+  color: #666;
   font-size: 14px;
 }
 
+/* ===============================
+   TIMELINE CORE
+=============================== */
 .timeline {
   position: relative;
 }
@@ -248,6 +344,9 @@ html {
   pointer-events: none;
 }
 
+/* ===============================
+   TIMELINE ITEM
+=============================== */
 .timeline-item {
   position: relative;
   width: 50%;
@@ -264,6 +363,9 @@ html {
   text-align: left;
 }
 
+/* ===============================
+   CARD / CONTENT
+=============================== */
 .timeline-content {
   background: #f2f2f2;
   padding: 20px;
@@ -282,6 +384,9 @@ html {
   color: #444;
 }
 
+/* ===============================
+   BUTTON
+=============================== */
 .about-buttons {
   margin-top: 14px;
   display: flex;
@@ -309,7 +414,10 @@ html {
   background: #eaeaea;
 }
 
-/* timeline foto */
+
+/* ===============================
+   TIMELINE CIRCLE (FOTO)
+=============================== */
 .timeline-circle {
   position: absolute;
   right: -45px;
@@ -488,7 +596,11 @@ body {
   border-bottom: 2px solid #FFD000;
 }
 
-/* detail section */
+
+
+/* ===============================
+   DETAIL SECTION
+=============================== */
 .about-detail-inline {
   max-width: 850px;
   margin: 70px auto 0;
@@ -514,6 +626,9 @@ body {
   margin-bottom: 6px;
 }
 
+/* ===============================
+   RESPONSIVE (MOBILE)
+=============================== */
 @media (max-width: 768px) {
 
   .timeline::before {
@@ -542,13 +657,19 @@ body {
   }
 }
 
-/* detail */
+
+
+/* =====================
+   DETAIL CONTENT
+===================== */
+
 .about-detail-inline {
   width: 90%;
   max-width: 900px;
   margin: 60px auto 0;
 }
 
+/* SEMUA DISEMBUNYIKAN */
 .detail-box {
   display: none;
   background-color: #f8f9fa;
@@ -557,6 +678,7 @@ body {
   animation: fadeUp 0.4s ease;
 }
 
+/* YANG AKTIF MUNCUL */
 .detail-box.active {
   display: block;
 }
@@ -573,7 +695,11 @@ body {
   margin-bottom: 6px;
 }
 
-/* pop up  */
+/* ===============================
+   EDUCATION MODAL (POPUP)
+   TIDAK MENGGANGGU ABOUT TIMELINE
+=============================== */
+
 .education-modal {
   position: fixed;
   inset: 0;
@@ -588,6 +714,7 @@ body {
   display: flex;
 }
 
+/* KONTEN MODAL */
 .education-modal-content {
   width: 90%;
   max-width: 1000px;
@@ -599,6 +726,7 @@ body {
   animation: fadeUp 0.4s ease;
 }
 
+/* TOMBOL X */
 .education-modal-close {
   position: absolute;
   top: 20px;
@@ -607,6 +735,7 @@ body {
   cursor: pointer;
 }
 
+/* JUDUL */
 .education-modal-content h1 {
   margin-bottom: 6px;
 }
@@ -616,6 +745,7 @@ body {
   font-size: 14px;
 }
 
+/* GAMBAR */
 .education-modal-image {
   margin: 40px 0;
 }
@@ -625,6 +755,7 @@ body {
   border-radius: 6px;
 }
 
+/* DESKRIPSI */
 .education-modal-desc {
   max-width: 600px;
   margin: 0 auto 30px;
@@ -632,11 +763,13 @@ body {
   color: #555;
 }
 
+/* FOOTER */
 .education-modal-footer {
   margin-bottom: 30px;
   font-size: 14px;
 }
 
+/* BUTTON CLOSE */
 .education-modal-btn {
   padding: 12px 26px;
   background: #FFD000;
