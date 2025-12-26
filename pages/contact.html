@@ -4,17 +4,13 @@
   <meta charset="UTF-8">
   <title>DIGIFOLIO | Contact</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Halaman kontak untuk menghubungi tim melalui form dan media sosial masing-masing anggota.">
 
-  <!-- MAIN CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
-
-  <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-
-<!-- ================= HEADER ================= -->
 <header>
   <nav class="navbar">
     <h1 class="logo">DIGIFOLIO</h1>
@@ -34,7 +30,6 @@
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
 
-      <!-- Dark / Light Mode -->
       <div id="Mode">
         <div id="switch"></div>
         <label id="inner-text">Light</label>
@@ -58,8 +53,12 @@
           <h4>Revina Hidayati</h4>
           <span class="role">UI/UX Designer</span>
           <div class="member-social">
-            <a href="https://instagram.com/revinahanur" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/revinahidayati" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/revinahanur" target="_blank" aria-label="Instagram Revina">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/revinahidayati" target="_blank" aria-label="GitHub Revina">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
 
@@ -67,8 +66,12 @@
           <h4>Delvina</h4>
           <span class="role">Frontend Developer</span>
           <div class="member-social">
-            <a href="https://instagram.com/finaag12" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/delvina-vina" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/finaag12" target="_blank" aria-label="Instagram Delvina">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/delvina-vina" target="_blank" aria-label="GitHub Delvina">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
 
@@ -76,8 +79,12 @@
           <h4>Elka Bella</h4>
           <span class="role">Backend Developer</span>
           <div class="member-social">
-            <a href="https://instagram.com/elka.bella" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/elkabella" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/elka.bella" target="_blank" aria-label="Instagram Elka">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/elkabella" target="_blank" aria-label="GitHub Elka">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
 
@@ -85,8 +92,12 @@
           <h4>Aksioma Arora</h4>
           <span class="role">Documentation</span>
           <div class="member-social">
-            <a href="https://instagram.com/aksiomaarora" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/aksiomaaroraak-ui" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/aksiomaarora" target="_blank" aria-label="Instagram Aksioma">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/aksiomaaroraak-ui" target="_blank" aria-label="GitHub Aksioma">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
 
@@ -98,7 +109,7 @@
       <h2>Get In Touch</h2>
       <p>Silakan isi form di bawah ini untuk mengirim pesan.</p>
 
-      <!-- FORM SUBMIT (NO JS REQUIRED) -->
+      <!-- FORM SUBMIT -->
       <form
         action="https://formsubmit.co/revinahidayati494@gmail.com"
         method="POST">
@@ -110,24 +121,30 @@
         <input type="hidden" name="_next" value="success.html">
 
         <div class="form-row">
+
           <div class="input-group">
-            <input type="text" name="name" placeholder="Your Name*" required>
+            <label for="name" class="sr-only">Your Name</label>
+            <input id="name" type="text" name="name" placeholder="Your Name*" required>
             <small class="error-text"></small>
           </div>
 
           <div class="input-group">
-            <input type="email" name="email" placeholder="Your Email*" required>
+            <label for="email" class="sr-only">Your Email</label>
+            <input id="email" type="email" name="email" placeholder="Your Email*" required>
             <small class="error-text"></small>
           </div>
+
         </div>
 
         <div class="input-group">
-          <input type="text" name="subject" placeholder="Subject*" required>
+          <label for="subject" class="sr-only">Subject</label>
+          <input id="subject" type="text" name="subject" placeholder="Subject*" required>
           <small class="error-text"></small>
         </div>
 
         <div class="input-group">
-          <textarea name="message" placeholder="Message*" required></textarea>
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" placeholder="Message*" required></textarea>
           <small class="error-text"></small>
         </div>
 
@@ -143,8 +160,6 @@
   <p>&copy; 2025 Digital Professional Portfolio | Kelompok 1</p>
 </footer>
 
-<!-- MAIN JS (UNTUK NAVBAR & MODE SAJA) -->
 <script src="../assets/js/main.js"></script>
-
 </body>
 </html>

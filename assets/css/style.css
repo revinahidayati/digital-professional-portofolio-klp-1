@@ -114,6 +114,12 @@ header {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  /* BACKGROUND FOTO */
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-action {
@@ -139,24 +145,18 @@ header {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
-.hero-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
 .hero-overlay {
   position: absolute;
   inset: 0;
+  background: rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
 
 .hero-glass {
   position: relative;
   z-index: 2;
+  margin: auto;
+  
 
   background: rgba(168, 168, 168, 0.15);
   backdrop-filter: blur(12px);
@@ -174,6 +174,7 @@ header {
   color: #ffffff;
   max-width: 800px;
   padding: 0 20px;
+  text-align: center;
 }
 
 .hero-title {
@@ -1179,6 +1180,19 @@ main {
 .contact-form button:hover {
   background-color: #b6b2b2;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
