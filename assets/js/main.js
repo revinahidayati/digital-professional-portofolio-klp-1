@@ -54,17 +54,18 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
       pengalaman: `
         <table class="edu-table">
-          <tr><td>Organisasi</td><td>Koordinator OSIS Sekbid Kewirausahaan</td></tr>
-          <tr><td>Magang</td><td>Internship Tim Screening Dokumen PCPM BI 37</td></tr>
-          <tr><td>Proyek</td><td>POI Data Collection Tim Alfa Quadrant</td></tr>
+          <tr><td>Organisasi</td><td>Koordinator OSIS Sekbid Kewirausahaan SMAN 1 Padang Panjang (2021-2022)</td></tr>
+          <tr><td>Organisasi</td><td>Anggota PIK-R SMAN 1 Padang Panjang (2020-2022</td></tr>
           <tr><td>Organisasi</td><td>HIMA Sistem Informasi Divisi Kominfo (2024–2025)</td></tr>
-          <tr><td>UKM</td><td>UK Kesenian Musik & Vocal Universitas Adzkia (2023–2025)</td></tr>
-          <tr><td>Organisasi</td><td>Anggota PIK-R SMAN 1 Padang Panjang</td></tr>
+          <tr><td>Organisasi</td><td>UKM Kesenian Musik & Vocal Universitas Adzkia (2023–2025)</td></tr>
+          <tr><td>Magang</td><td>Internship Tim Screening Dokumen PCPM BI 37 PT INFOMEDIA NUSANTARA (2023)</td></tr>
+          <tr><td>Proyek</td><td>POI Data Collection Tim Alfa TEKNOVERSA Quadrant (2024)</td></tr>
+          <tr><td>Magang</td><td>Internship Dinas KOMINFO Padang Bidang E-Goverment (2025)</td></tr>
         </table>
       `,
       skills: `
         <table class="edu-table">
-          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML</td></tr>
+          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML, Bahasa Inggris</td></tr>
           <tr><td>Soft Skills</td><td>Leadership, Teamwork, Adaptif, Aktif, Inisiatif, Fast Learning, Disiplin</td></tr>
         </table>
       `
