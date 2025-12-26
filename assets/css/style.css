@@ -3,7 +3,7 @@
   --dark: #212529;
   --light: #ffffff;
   --text-muted: #6c757d;
-  --font-main: 'Playfair Display', serif;
+  --font-main: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --transition-fast: 0.3s ease;
 }
 
@@ -462,19 +462,24 @@ html {
 }
 
 .timeline-circle.revina {
-  background-image: url("../img/IMG-20250501-WA0096.jpg");
+  background-image: url("../images/");
 }
 
 .timeline-circle.delvina {
-  background-image: url("../img/IMG-7605.jpeg");
+  background-image: url("../images/IMG-20251223-WA0000.jpg");
 }
 
 .timeline-circle.elkabella {
-  background-image: url("../img/IMG-20251223-WA0015.jpg");
+  background-image: url("../images/");
 }
 
 .timeline-circle.aksioma {
-  background-image: url("../img/IMG_7605.PNG");
+  background-image: url("../images/");
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
 }
 
 .nav-menu {
