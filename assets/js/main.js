@@ -89,8 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
       skills: `
         <table class="edu-table">
-          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML</td></tr>
-          <tr><td>Soft Skills</td><td>Leadership, Teamwork, Adaptif, Aktif, Inisiatif, Fast Learning, Disiplin</td></tr>
+          <tr><td>Hard Skills</td><td>mampu menggunakan word , excel dan powerpoint,  mampu memasukkan , mengelola dan merapikan ,serta mampu mencari informasi dan berkomunikasi secara profesional </td></tr>
+          <tr><td>Soft Skills</td><td>memiliki rasa tanggung jawab , mampu berkerja sama tim, disiplin ,mudah menyesuaikan diri serta mampu menyampaikan ide dengn jelas dan sopan</td></tr>
         </table>
       `
     },

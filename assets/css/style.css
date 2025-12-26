@@ -1425,61 +1425,6 @@ footer p {
   }
 }
 
-/* ===============================
-   MOBILE FIRST OVERRIDE (AMAN)
-=============================== */
-
-/* PROJECT GRID - MOBILE DEFAULT */
-.projects-grid {
-  grid-template-columns: 1fr;
-}
-
-/* CONTACT */
-.contact-container {
-  flex-direction: column;
-}
-
-/* TEAM GRID */
-.team-grid {
-  grid-template-columns: 1fr;
-}
-
-/* ===============================
-   TABLET (>=768px)
-=============================== */
-@media (min-width: 768px) {
-
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-title {
-    font-size: 42px;
-  }
-}
-
-/* ===============================
-   DESKTOP (>=1024px)
-=============================== */
-@media (min-width: 1024px) {
-
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .contact-container {
-    flex-direction: row;
-  }
-
-  .hero-title {
-    font-size: 56px;
-  }
-}
-
 
 /* =====================
    ANIMATION
