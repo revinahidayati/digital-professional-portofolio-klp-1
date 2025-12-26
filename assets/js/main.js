@@ -221,3 +221,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// dark light mode
+document.addEventListener("DOMContentLoaded", () => {
+  const modeToggle = document.getElementById("Mode");
+  const body = document.body;
+
+  if (!modeToggle) return;
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    body.classList.remove("dark-theme");
+  } else {
+    body.classList.add("dark-theme"); // default dark
+  }
+
+  modeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-theme");
+
+    const currentTheme = body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+
+    localStorage.setItem("theme", currentTheme);
+  });
+});
