@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
       skills: `
         <table class="edu-table">
-          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML</td></tr>
-          <tr><td>Soft Skills</td><td>Leadership, Teamwork, Adaptif, Aktif, Inisiatif, Fast Learning, Disiplin</td></tr>
+          <tr><td>Hard Skills</td><td>​Mampu mengoperasikan Microsoft Office (Word, Excel, PowerPoint) untuk pengolahan data dan laporan.​ Mampu  memasukkan, mengelola, dan merapikan data secara terstruktur. ​Mampu melakukan riset informasi digital dan berkomunikasi secara profesional.</td></tr>
+          <tr><td>Soft Skills</td><td>​Memiliki rasa tanggung jawab terhadap tugas, Mampu bekerja sama dalam tim, ​Disiplin dan mudah menyesuaikan diri (adaptif), Mampu menyampaikan ide dengan jelas dan sopan.</td></tr>
         </table>
       `
     },
@@ -137,8 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
       skills: `
         <table class="edu-table">
-          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML</td></tr>
-          <tr><td>Soft Skills</td><td>Leadership, Teamwork, Adaptif, Aktif, Inisiatif, Fast Learning, Disiplin</td></tr>
+          <tr><td>Hard Skills</td><td>mampu menggunakan word , excel dan powerpoint, coral draw dan mampu mengelola dan merapikan ,serta mampu mencari informasi dan berkomunikasi secara profesional </td></tr>
+          <tr><td>Soft Skills</td><td> memiliki rasa tanggung jawab , mampu berkerja sama tim, disiplin ,mudah menyesuaikan diri serta mampu menyampaikan ide dengn jelas</td></tr>
         </table>
       `
     }
