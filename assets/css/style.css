@@ -1036,6 +1036,8 @@ main {
 
 #contact {
   scroll-margin-top: 90px;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-container {
@@ -1336,7 +1338,6 @@ footer p {
 /* ===============================
    SAFETY: CONTENT TIDAK MENANGKAP KLIK
 =============================== */
-.timeline,
 .timeline::before,
 .timeline-circle {
   pointer-events: none;
