@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* =========================
      TYPING EFFECT
   ========================= */
-  const textWelcome = " Welcome to Our Digital Portofolio";
+  const textWelcome = " Welcome to Our Digital Portfolio";
   const typing = document.getElementById("typing");
 
   if (typing) {
