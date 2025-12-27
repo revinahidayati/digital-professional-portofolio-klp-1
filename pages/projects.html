@@ -2,31 +2,19 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Halaman proyek yang menampilkan hasil karya mahasiswa di bidang pengembangan web dan teknologi informasi.">
-
   <title>DIGIFOLIO | Projects</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body>
+<body class="dark-mode">
 
-<!-- ================= HEADER ================= -->
 <header>
   <nav class="navbar">
     <h1 class="logo">DIGIFOLIO</h1>
 
     <div class="nav-right">
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <button id="toggleMode">Mode</button>
 
       <ul class="nav-menu">
         <li><a href="../index.html">Home</a></li>
@@ -35,223 +23,113 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-
-      <div id="Mode">
-        <span>Mode</span>
-        <div id="switch"></div>
-    </div>
     </div>
   </nav>
 </header>
 
-<!-- ================= MAIN ================= -->
 <main>
-
 <section class="projects">
-  <div class="projects-wrapper">
+  <h2 class="section-title">Projects & Portfolio</h2>
 
-    <h2 class="section-title">PROJECTS</h2>
-    <p class="section-subtitle">
-      Proyek yang telah dikerjakan oleh anggota kelompok sebagai bagian dari
-      pembelajaran dan pengalaman di bidang teknologi informasi.
-    </p>
+  <div class="projects-grid">
 
-    <div class="projects-grid">
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <img src="../assets/images/disnakerin-login.jpg" alt="Disnakerin Padang">
 
-      <!-- ================= PROJECT 1 ================= -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="../assets/images/disnakerin-login.jpg"
-               alt="Sistem Informasi Pengelolaan Data Ketenagakerjaan DISNAKERIN Padang">
-        </div>
+      <h3>Sistem Informasi Pengelolaan Data Ketenagakerjaan</h3>
 
-        <div class="project-content">
-          <h3>Sistem Informasi Pengelolaan Data Ketenagakerjaan Berbasis Web</h3>
+       <p class="project-meta">
+        <strong>Nama:</strong> Revina Hidayati
+      </p>
 
-          <p class="project-meta">
-            <strong>Nama:</strong> Revina Hidayati
-           </p>
+      <p class="project-desc">
+        Sistem informasi berbasis web untuk pengelolaan data ketenagakerjaan
+        yang dikembangkan selama kegiatan magang di Dinas Komunikasi dan Informatika.
+      </p>
 
-          <p>
-            Proyek ini merupakan pengembangan sistem informasi berbasis web
-            untuk pengelolaan data ketenagakerjaan yang dikerjakan selama
-            kegiatan magang di Dinas Komunikasi dan Informatika Kota Padang.
-            Sistem ini mendukung pengelolaan laporan perusahaan, distribusi
-            tenaga kerja, serta visualisasi data dalam bentuk tabel dan grafik.
-          </p>
+      <p><strong>Teknologi:</strong> Laravel, MySQL, HTML, CSS</p>
 
-          <p>
-            <strong>Kontribusi:</strong><br>
-            Pembuatan tampilan antarmuka (UI), fitur login, serta membantu
-            pengembangan API sistem.
-          </p>
-
-          <p>
-            <strong>Teknologi:</strong><br>
-            Laravel, Laragon, MySQL, HTML, CSS
-          </p>
-
-          <a href="https://github.com/revinahidayati/disnakerinpadang.git"
-             target="_blank"
-             style="font-weight:600; color:#2563eb; text-decoration:none;">
-            🔗 Repository GitHub
-          </a>
-        </div>
-      </div>
-
-      <!-- ================= PROJECT 2 ================= -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="../assets/images/cakehub-preview.jpg"
-               alt="CakeHub - Platform Marketplace UMKM Kue Basah">
-        </div>
-
-        <div class="project-content">
-          <h3>CakeHub - Platform Marketplace UMKM Kue Basah </h3>
-
-          <p class="project-meta">
-            <strong>Nama:</strong> Revina Hidayati
-           </p>
-
-          <p>
-            CakeHub merupakan website marketplace sederhana yang dirancang untuk
-            menghubungkan pengguna dengan pelaku UMKM kue basah lokal. Website ini
-            memudahkan pengguna dalam mencari, membandingkan, dan melihat rekomendasi
-            produk kue basah dari berbagai UMKM dalam satu platform.
-          </p>
-
-          <p>
-          Website CakeHub menampilkan antarmuka yang modern dan ramah pengguna,
-          dilengkapi dengan fitur pencarian, kategori produk, UMKM populer,
-          serta rekomendasi untuk pengguna.
-         </p>
-
-         <p>
-         <strong>Tujuan:</strong><br>
-          Mendukung digitalisasi UMKM lokal melalui media promosi dan pemesanan
-          produk kue basah secara online.
-        </p>
-
-        <p>
-        <strong>Peran / Kontribusi:</strong><br>
-         Perancangan desain antarmuka (UI) dan pengembangan halaman website
-         berbasis frontend.
-       </p>
-
-        <p>
-        <strong>Teknologi:</strong><br>
-         HTML, CSS, JavaScript
-        </p>
-
-            <div style="margin-top:12px;">
-      <a href="https://revinahidayati.github.io/CakeHub/"
-         target="_blank"
-         style="margin-right:16px; font-weight:600; color:#2563eb; text-decoration:none;">
-        🌐 Lihat Demo
-      </a>
-
-      <a href="https://github.com/revinahidayati/CakeHub.git"
-         target="_blank"
-         style="font-weight:600; color:#2563eb; text-decoration:none;">
-        💻 Repository GitHub
+      <a href="https://github.com/revinahidayati/disnakerinpadang.git" target="_blank">
+        Repository GitHub
       </a>
     </div>
-        </div>
-      </div>
 
-      <!-- ================= PROJECT 3 ================= -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="../assets/images/portfolio-bella.jpg"
-               alt="Website Portofolio Pribadi Elka Bella">
-        </div>
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <img src="../assets/images/cakehub-preview.jpg" alt="CakeHub">
 
-        <div class="project-content">
-          <h3>Website Portofolio Pribadi</h3>
+      <h3>CakeHub – Marketplace UMKM Kue Basah</h3>
 
-          <p class="project-meta">
-            <strong>Nama:</strong> Elka Bella
-          </p>
+      <p class="project-meta">
+        <strong>Nama:</strong> Revina Hidayati
+      </p>
 
-          <p>
-            Proyek ini merupakan pembuatan website portofolio pribadi yang
-            bertujuan untuk menampilkan identitas diri, riwayat pendidikan,
-            keterampilan, prestasi, serta pengalaman kerja secara online
-            sebagai media publikasi portofolio akademik.
-          </p>
+      <p class="project-desc">
+        Website marketplace sederhana untuk membantu promosi dan pemesanan
+        produk kue basah UMKM lokal.
+      </p>
 
-          <p>
-            <strong>Kontribusi:</strong><br>
-            Perancangan tampilan antarmuka (UI) dan pengembangan seluruh halaman website.
-          </p>
+      <p><strong>Teknologi:</strong> HTML, CSS, JavaScript</p>
 
-          <p>
-            <strong>Teknologi:</strong><br>
-            HTML, CSS, JavaScript
-          </p>
-
-          <div class="project-links">
-            <a href="https://elkabella.github.io/portfolio-bella/"
-               target="_blank"
-               style="margin-right:16px; font-weight:600; color:#2563eb; text-decoration:none;">
-               🌐 Demo</a>
-            <a href="https://github.com/Elkabella/portfolio-bella.git"
-               target="_blank"
-               style="font-weight:600; color:#2563eb; text-decoration:none;">
-               💻 GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ================= PROJECT 4 ================= -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="../assets/images/biodata-mahasiswa.jpg"
-               alt="Aplikasi Input Biodata Mahasiswa">
-        </div>
-
-        <div class="project-content">
-          <h3>Aplikasi Input Biodata Mahasiswa</h3>
-
-          <p class="project-meta">
-            <strong>Nama:</strong> Delvina
-          </p>
-
-          <p>
-            Proyek ini merupakan pengembangan aplikasi mobile sederhana
-            untuk melakukan input biodata mahasiswa, meliputi NIM, nama,
-            jenis kelamin, dan alamat sebagai latihan dasar Android.
-          </p>
-
-          <p>
-            <strong>Kontribusi:</strong><br>
-            Perancangan antarmuka pengguna (UI) dan pengembangan logika input data.
-          </p>
-
-          <p>
-            <strong>Teknologi:</strong><br>
-            Java, Android Studio
-          </p>
-
-          <a href="https://github.com/delvina-vina/input-biodata-mahasiswa.git"
-             target="_blank"
-             style="font-weight:600; color:#2563eb; text-decoration:none;">
-            💻 Repository GitHub
-          </a>
-        </div>
-      </div>
-
+      <a href="https://revinahidayati.github.io/CakeHub/" target="_blank">Demo</a> |
+      <a href="https://github.com/revinahidayati/CakeHub.git" target="_blank">GitHub</a>
     </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <img src="../assets/images/portfolio-bella.jpg" alt="Portofolio Pribadi">
+
+      <h3>Website Portofolio Pribadi</h3>
+
+      <p class="project-meta">
+        <strong>Nama:</strong> Elka Bella
+      </p>
+
+      <p class="project-desc">
+        Website portofolio pribadi untuk menampilkan identitas diri,
+        pendidikan, keterampilan, dan pengalaman kerja secara online.
+      </p>
+
+      <p><strong>Teknologi:</strong> HTML, CSS, JavaScript</p>
+
+      <a href="https://elkabella.github.io/portfolio-bella/" target="_blank">Demo</a> |
+      <a href="https://github.com/Elkabella/portfolio-bella.git" target="_blank">GitHub</a>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card">
+      <img src="../assets/images/biodata-mahasiswa.jpg" alt="Biodata Mahasiswa">
+
+      <h3>Aplikasi Input Biodata Mahasiswa</h3>
+
+      <p class="project-meta">
+        <strong>Nama:</strong> Delvina
+      </p>
+
+      <p class="project-desc">
+        Aplikasi mobile sederhana untuk input biodata mahasiswa
+        sebagai latihan dasar pengembangan Android.
+      </p>
+
+      <p><strong>Teknologi:</strong> Java, Android Studio</p>
+
+      <a href="https://github.com/delvina-vina/input-biodata-mahasiswa.git" target="_blank">
+        GitHub
+      </a>
+    </div>
+
   </div>
 </section>
-
 </main>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <p>&copy; 2025 DIGIFOLIO | Kelompok 1</p>
-</footer>
+<script>
+  const btn = document.getElementById("toggleMode");
+  btn.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
+  };
+</script>
 
-  <script src="../assets/js/main.js"></script>
 </body>
 </html>
