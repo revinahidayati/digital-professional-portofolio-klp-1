@@ -222,27 +222,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// BLOG CATEGORY FILTER
+// BLOG CATEGORY FILTER 
 document.addEventListener("DOMContentLoaded", () => {
   const filters = document.querySelectorAll(".category-list li");
   const cards = document.querySelectorAll(".blog-card");
 
   filters.forEach(filter => {
     filter.addEventListener("click", () => {
+      // aktifkan kategori
       filters.forEach(f => f.classList.remove("active"));
       filter.classList.add("active");
 
       const category = filter.dataset.filter;
 
       cards.forEach(card => {
-        card.style.display =
-          category === "Semua" || card.dataset.category === category
-            ? "block"
-            : "none";
+        if (category === "all") {
+          card.style.display = "block";
+        } else {
+          card.style.display =
+            card.dataset.category === category ? "block" : "none";
+        }
       });
     });
   });
 });
+
 
 
 // dark light mode
