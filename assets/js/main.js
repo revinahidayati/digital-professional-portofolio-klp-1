@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* =========================
      TYPING EFFECT
   ========================= */
-  const textWelcome = " Welcome to Our Digital Portofolio";
+  const textWelcome = " Welcome to Our Digital Portfolio";
   const typing = document.getElementById("typing");
 
   if (typing) {
@@ -54,17 +54,18 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
       pengalaman: `
         <table class="edu-table">
-          <tr><td>Organisasi</td><td>Koordinator OSIS Sekbid Kewirausahaan</td></tr>
-          <tr><td>Magang</td><td>Internship Tim Screening Dokumen PCPM BI 37</td></tr>
-          <tr><td>Proyek</td><td>POI Data Collection Tim Alfa Quadrant</td></tr>
+          <tr><td>Organisasi</td><td>Koordinator OSIS Sekbid Kewirausahaan SMAN 1 Padang Panjang (2021-2022)</td></tr>
+          <tr><td>Organisasi</td><td>Anggota PIK-R SMAN 1 Padang Panjang (2020-2022</td></tr>
           <tr><td>Organisasi</td><td>HIMA Sistem Informasi Divisi Kominfo (2024–2025)</td></tr>
-          <tr><td>UKM</td><td>UK Kesenian Musik & Vocal Universitas Adzkia (2023–2025)</td></tr>
-          <tr><td>Organisasi</td><td>Anggota PIK-R SMAN 1 Padang Panjang</td></tr>
+          <tr><td>Organisasi</td><td>UKM Kesenian Musik & Vocal Universitas Adzkia (2023–2025)</td></tr>
+          <tr><td>Magang</td><td>Internship Tim Screening Dokumen PCPM BI 37 PT INFOMEDIA NUSANTARA (2023)</td></tr>
+          <tr><td>Proyek</td><td>POI Data Collection Tim Alfa TEKNOVERSA Quadrant (2024)</td></tr>
+          <tr><td>Magang</td><td>Internship Dinas KOMINFO Padang Bidang E-Goverment (2025)</td></tr>
         </table>
       `,
       skills: `
         <table class="edu-table">
-          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML</td></tr>
+          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML, Bahasa Inggris</td></tr>
           <tr><td>Soft Skills</td><td>Leadership, Teamwork, Adaptif, Aktif, Inisiatif, Fast Learning, Disiplin</td></tr>
         </table>
       `
@@ -88,8 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
       skills: `
         <table class="edu-table">
-          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML</td></tr>
-          <tr><td>Soft Skills</td><td>Leadership, Teamwork, Adaptif, Aktif, Inisiatif, Fast Learning, Disiplin</td></tr>
+          <tr><td>Hard Skills</td><td>mampu menggunakan word , excel dan powerpoint,  mampu memasukkan , mengelola dan merapikan ,serta mampu mencari informasi dan berkomunikasi secara profesional </td></tr>
+          <tr><td>Soft Skills</td><td>memiliki rasa tanggung jawab , mampu berkerja sama tim, disiplin ,mudah menyesuaikan diri serta mampu menyampaikan ide dengn jelas dan sopan</td></tr>
         </table>
       `
     },
@@ -112,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
       skills: `
         <table class="edu-table">
-          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML</td></tr>
-          <tr><td>Soft Skills</td><td>Leadership, Teamwork, Adaptif, Aktif, Inisiatif, Fast Learning, Disiplin</td></tr>
+          <tr><td>Hard Skills</td><td>​Mampu mengoperasikan Microsoft Office (Word, Excel, PowerPoint) untuk pengolahan data dan laporan.​ Mampu  memasukkan, mengelola, dan merapikan data secara terstruktur. ​Mampu melakukan riset informasi digital dan berkomunikasi secara profesional.</td></tr>
+          <tr><td>Soft Skills</td><td>​Memiliki rasa tanggung jawab terhadap tugas, Mampu bekerja sama dalam tim, ​Disiplin dan mudah menyesuaikan diri (adaptif), Mampu menyampaikan ide dengan jelas dan sopan.</td></tr>
         </table>
       `
     },
@@ -136,8 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
       `,
       skills: `
         <table class="edu-table">
-          <tr><td>Hard Skills</td><td>Microsoft Office, Data Entri, Analisis Data, MySQL, Google Workspace, C++, StarUML</td></tr>
-          <tr><td>Soft Skills</td><td>Leadership, Teamwork, Adaptif, Aktif, Inisiatif, Fast Learning, Disiplin</td></tr>
+          <tr><td>Hard Skills</td><td>mampu menggunakan word , excel dan powerpoint, coral draw dan mampu mengelola dan merapikan ,serta mampu mencari informasi dan berkomunikasi secara profesional </td></tr>
+          <tr><td>Soft Skills</td><td> memiliki rasa tanggung jawab , mampu berkerja sama tim, disiplin ,mudah menyesuaikan diri serta mampu menyampaikan ide dengn jelas</td></tr>
         </table>
       `
     }
@@ -219,4 +220,56 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+});
+
+// BLOG CATEGORY FILTER 
+document.addEventListener("DOMContentLoaded", () => {
+  const filters = document.querySelectorAll(".category-list li");
+  const cards = document.querySelectorAll(".blog-card");
+
+  filters.forEach(filter => {
+    filter.addEventListener("click", () => {
+      // aktifkan kategori
+      filters.forEach(f => f.classList.remove("active"));
+      filter.classList.add("active");
+
+      const category = filter.dataset.filter;
+
+      cards.forEach(card => {
+        if (category === "all") {
+          card.style.display = "block";
+        } else {
+          card.style.display =
+            card.dataset.category === category ? "block" : "none";
+        }
+      });
+    });
+  });
+});
+
+
+
+// dark light mode
+document.addEventListener("DOMContentLoaded", () => {
+  const modeToggle = document.getElementById("Mode");
+  const body = document.body;
+
+  if (!modeToggle) return;
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    body.classList.remove("dark-theme");
+  } else {
+    body.classList.add("dark-theme"); // default dark
+  }
+
+  modeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-theme");
+
+    const currentTheme = body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+
+    localStorage.setItem("theme", currentTheme);
+  });
 });
