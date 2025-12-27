@@ -222,6 +222,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// BLOG CATEGORY FILTER
+document.addEventListener("DOMContentLoaded", () => {
+  const filters = document.querySelectorAll(".category-list li");
+  const cards = document.querySelectorAll(".blog-card");
+
+  filters.forEach(filter => {
+    filter.addEventListener("click", () => {
+      filters.forEach(f => f.classList.remove("active"));
+      filter.classList.add("active");
+
+      const category = filter.dataset.filter;
+
+      cards.forEach(card => {
+        card.style.display =
+          category === "Semua" || card.dataset.category === category
+            ? "block"
+            : "none";
+      });
+    });
+  });
+});
+
+
 // dark light mode
 document.addEventListener("DOMContentLoaded", () => {
   const modeToggle = document.getElementById("Mode");
