@@ -21,42 +21,11 @@ Fitur Utama
 - Dokumentasi hasil kerja
 - Tampilan sederhana dan mudah dipahami
 
-
 Teknologi yang Digunakan
 - HTML
 - CSS
 - JavaScript
-- GitHub / Media penyimpanan digital 
-
-struktur folder
-Digital-Professional-Portfolio/
-│
-│── README.md
-│── index.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-├── assets/
-│   ├── images/
-│   │   ├── foto-anggota/
-│   │   └── logo/
-│   │
-│   ├── icons/
-│   └── documents/
-│       ├── CV/
-│       └── Sertifikat/
-│
-├── data/
-│   └── profile.json
-│
-└── docs/
-    ├── Laporan.docx
-    └── Presentasi.pptx
-
+- Git & GitHub
 
 Cara Menjalankan Proyek
 1. Download atau clone repository proyek
@@ -66,13 +35,14 @@ Cara Menjalankan Proyek
 
 Role dan Tanggung Jawab Tim
 
-| No | Nama Anggota | Role | Tanggung Jawab |
-|----|-------------|------|----------------|
-| 1 | Ketua Tim | Project Manager | Mengkoordinasikan tim, membagi tugas, memastikan proyek selesai tepat waktu |
-| 2 | revina hidayati | Front-End Developer | Membuat tampilan UI dan struktur halaman |
-| 3 | elka bella | Content Writer | Menyusun isi portofolio (profil, deskripsi, pengalaman) |
-| 4 |delvina | Designer | Mendesain layout, warna, dan elemen visual |
-| 5 | Aksioma Arora | Dokumentasi | Menyusun README, laporan, dan dokumentasi proyek |
+1. revina Hidayati
+tanggung jawab: membuat struktur folder, mendesain tampilan UI, membuat tampilan dan fitur homepage & contact, serta  mengoordinasikan kerja sama tim
+2. elka bella
+tanggung jawab: membuat tampilan dan fitur untuk projects dan blog
+3. delvina
+tanggung jawab: membuat tampilan dan fitur untuk about serta fitur hamburger
+4. aksioma arora
+tanggung jawab: membuat dokumentasi dengan Menyusun README dan laporan proyek
 
 Penutup
 Proyek Digital Professional Portfolio ini diharapkan dapat menjadi media
