@@ -24,6 +24,7 @@ Fitur Utama
 Teknologi yang Digunakan
 - HTML
 - CSS
+visual studio code
 - JavaScript
 - Git & GitHub
 
